@@ -12,7 +12,6 @@
 | 번들러          | Vite           |
 | 프레임워크 부문     | React          |
 | 개발 언어 부문     | Typescript     |
-| 메타 프레임워크부문   | Next.js        |
 | CSS-in-JS    | Emotion        |
 | 유틸리티 CSS     | TailwindCSS    |
 | 애니메이션 라이브러리  | Framer Motion  |

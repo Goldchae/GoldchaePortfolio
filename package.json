@@ -1,0 +1,12 @@
+{
+  "name": "goldchaeportfolio",
+  "version": "1.0.0",
+  "description": "내 포트폴리오 웹사이트 제작하기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
