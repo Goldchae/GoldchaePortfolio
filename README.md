@@ -3,7 +3,7 @@
 
 ---
 ## 📋 Project Architecture
-![프로젝트 아키텍처](./readmeFile/architecture.png)
+![프로젝트 아키텍처](./readmeFile/projectArchitecture.png)
 
 | 설명           | 스택             |
 |--------------|----------------|
