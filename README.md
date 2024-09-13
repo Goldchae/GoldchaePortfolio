@@ -25,16 +25,16 @@
 
 
 ### 1차 업데이트 계획 - Kubernetes 도입
-| 설명           | 스택             |
-|--------------|----------------|
-|컨테이너 오케스트레이션 도구 | Kubernetes|
+| 설명              | 스택         |
+|-----------------|------------|
+| 컨테이너 오케스트레이션 도구 | Kubernetes |
 
 ### 2차 업데이트 계획 - 챗봇 도입
-| 설명           | 스택             |
-|--------------|----------------|
-|API 개발용 웹 프레임워크 | FastAPI|
-|LLM 활용 프레임워크 | Langchain|
-|인공지능 API 서비스 | OpenAI API|
+| 설명              | 스택         |
+|-----------------|------------|
+| API 개발용 웹 프레임워크 | FastAPI    |
+| LLM 활용 프레임워크    | Langchain  |
+| 인공지능 API 서비스    | OpenAI API |
 ---
 ## 📋 Convention
 
@@ -48,37 +48,37 @@
 
 ### Commit Convention
 
-| Commit Type | Description           |
-| ----------- | --------------------- |
-|Feat	|새로운 기능 추가|
-|Fix	|버그 수정|
-|Docs	|문서 수정|
-|Style	|코드 formatting, 세미콜론 누락, 코드 자체의 변경이 없는 경우|
-|Init	|초기 생성|
-|Refactor	|코드 리팩토링|
-|Test	|테스트 코드, 리팩토링 테스트 코드 추가|
-|Chore	|패키지 매니저 수정, 그 외 기타 수정 ex) .gitignore|
-|Design	|CSS 등 사용자 UI 디자인 변경|
-|Comment	|필요한 주석 추가 및 변경|
-|Rename	|파일 또는 폴더 명을 수정하거나 옮기는 작업만인 경우|
-|Remove	|파일을 삭제하는 작업만 수행한 경우|
+| Commit Type | Description                              |
+|-------------|------------------------------------------|
+| Feat	       | 새로운 기능 추가                                |
+| Fix	        | 버그 수정                                    |
+| Docs	       | 문서 수정                                    |
+| Style	      | 코드 formatting, 세미콜론 누락, 코드 자체의 변경이 없는 경우 |
+| Init	       | 초기 생성                                    |
+| Refactor	   | 코드 리팩토링                                  |
+| Test	       | 테스트 코드, 리팩토링 테스트 코드 추가                   |
+| Chore	      | 패키지 매니저 수정, 그 외 기타 수정 ex) .gitignore     |
+| Design	     | CSS 등 사용자 UI 디자인 변경                      |
+| Comment	    | 필요한 주석 추가 및 변경                           |
+| Rename	     | 파일 또는 폴더 명을 수정하거나 옮기는 작업만인 경우            |
+| Remove	     | 파일을 삭제하는 작업만 수행한 경우                      |
 
 ### PR Convention
 
-| Icon          | 사용법                 | Description                      |
-|---------------|---------------------| -------------------------------- |
-| 🎨 Design     | `:art`              | UI/스타일 파일 추가/수정         |
-| ✨ Feature     | `:sparkles`         | 새로운 기능 도입                 |
-| 🔥 Fix        | `:fire`             | 버그 수정                        |
-| ✅ Test        | `:white_check_mark` | 로직 및 코드 테스트              |
-| ♻️ Refactoring | `:recycle`          | 코드 리팩토링                    |
-| 📘 Docs       | `:blue_book`        | Feature 이외에 문서 생성 및 수정 
-| ⚡️  Opti       |:zap	|성능 개선|
-| 🔥Delete      |:fire|	코드/파일 삭제|
-| 🐛Bug         |:bug	|버그 수정|
-| ⏪Rewind       |:rewind|	변경 내용 되돌리기|
-| 🔀Merge       |:twisted_rightwards_arrows	|브랜치 합병|
-| 💡Desc        |:bulb	|주석 추가/수정|
+| Icon           | 사용법                         | Description            |
+|----------------|-----------------------------|------------------------|
+| 🎨 Design      | `:art`                      | UI/스타일 파일 추가/수정        |
+| ✨ Feature      | `:sparkles`                 | 새로운 기능 도입              |
+| 🔥 Fix         | `:fire`                     | 버그 수정                  |
+| ✅ Test         | `:white_check_mark`         | 로직 및 코드 테스트            |
+| ♻️ Refactoring | `:recycle`                  | 코드 리팩토링                |
+| 📘 Docs        | `:blue_book`                | Feature 이외에 문서 생성 및 수정 |
+| ⚡️  Opti       | :zap	                       | 성능 개선                  |
+| 🔥Delete       | :fire                       | 	코드/파일 삭제              |
+| 🐛Bug          | :bug	                       | 버그 수정                  |
+| ⏪Rewind        | :rewind                     | 	변경 내용 되돌리기            |
+| 🔀Merge        | :twisted_rightwards_arrows	 | 브랜치 합병                 |
+| 💡Desc         | :bulb	                      | 주석 추가/수정               |
 
 ### Issue Convention
 ```angular2html
@@ -123,6 +123,25 @@ assignees: ''
 <!-- 작업한 이슈번호를 # 뒤에 붙여주세요. -->
 - Resolved: #3
 ```
+
+### 디렉토리 구조
+```
+├── public/                 # 정적 파일들이 위치하는 곳
+│
+├── src/                    # 소스 코드가 위치하는 곳
+│   ├── assets/             # 이미지, 폰트, 스타일 등 정적 자산
+│   ├── components/         # 재사용 가능한 컴포넌트
+│   ├── pages/              # 각 라우트에 해당하는 페이지 컴포넌트
+│   ├── hooks/              # 커스텀 훅
+│   ├── constants/          # 공통적으로 사용되는 상수들을 정의한 파일
+│   ├── stores/             # Zustand 상태관리
+│   ├── services/           # api 관련 로직의 모듈 파일, auth와 같이 인증과 관련된 파일
+│   ├── utils/              # 정규표현식 패턴이나 공통함수 등 공통으로 사용하는 유틸 파일
+│   └── config/             # 여러개의 config 파일
+│
+└── package.json            # 프로젝트 설정 및 의존성 목록
+```
+
 ---
 ## 📋 Design
 ### font
