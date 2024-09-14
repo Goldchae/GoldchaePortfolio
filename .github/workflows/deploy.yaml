@@ -46,4 +46,4 @@ jobs:
             fi
             docker stop qup-frontend || true
             docker rm qup-frontend || true
-            docker run -d -p 80:3024 --name qup-frontend ${{ env.DOCKER_IMAGE }}:latest
+            docker run -d -p 3024:80 --name qup-frontend ${{ env.DOCKER_IMAGE }}:latest
