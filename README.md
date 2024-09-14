@@ -10,6 +10,7 @@
 | 패키지 관리 도구    | npm            |
 | 런타임 환경       | Node.js        |
 | 번들러          | Vite           |
+|트랜스파일러 | SWC|
 | 프레임워크 부문     | React          |
 | 개발 언어 부문     | Typescript     |
 | CSS-in-JS    | Emotion        |
@@ -22,6 +23,7 @@
 | CI/CD 부문     | GitHub Actions |
 | 서버 부문        | AWS EC2        |
 | 컨테이너화 부문     | Docker         |
+|리버스 프록시 및 웹 서버| Nginx|ㅍ
 
 
 ### 1차 업데이트 계획 - Kubernetes 도입
@@ -73,12 +75,13 @@
 | ✅ Test         | `:white_check_mark`         | 로직 및 코드 테스트            |
 | ♻️ Refactoring | `:recycle`                  | 코드 리팩토링                |
 | 📘 Docs        | `:blue_book`                | Feature 이외에 문서 생성 및 수정 |
-| ⚡️  Opti       | :zap	                       | 성능 개선                  |
-| 🔥Delete       | :fire                       | 	코드/파일 삭제              |
-| 🐛Bug          | :bug	                       | 버그 수정                  |
-| ⏪Rewind        | :rewind                     | 	변경 내용 되돌리기            |
-| 🔀Merge        | :twisted_rightwards_arrows	 | 브랜치 합병                 |
-| 💡Desc         | :bulb	                      | 주석 추가/수정               |
+| ⚡️  Opti       | ` :zap	   `                   | 성능 개선                  |
+| 🔥 Delete      | ` :fire  `                    | 	코드/파일 삭제              |
+| 🐛 Bug         |`  :bug` 	                     | 버그 수정                  |
+| ⏪ Rewind       | ` :rewind               `     | 	변경 내용 되돌리기            |
+| 🔀 Merge       | ` :twisted_rightwards_arrows` 	 | 브랜치 합병                 |
+| 💡 Desc        | ` :bulb	        `             | 주석 추가/수정               |
+| 📋 Init        | `:clipboard`                | 프로젝트 초기 세팅             |
 
 ### Issue Convention
 ```angular2html
