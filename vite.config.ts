@@ -14,7 +14,9 @@ export default defineConfig({
   ],
   css: {
     postcss: {
-      plugins: [tailwindcss],
+      plugins: [
+        tailwindcss(), // 함수로 호출
+      ],
     },
   },
   resolve: {
@@ -23,7 +25,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
+    port: 3024,
   },
   build: {
     outDir: 'dist',
