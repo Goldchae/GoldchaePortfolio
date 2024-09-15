@@ -5,7 +5,7 @@ import { Group } from 'three';
 
 function MyGLBModel(): JSX.Element {
   const model = useRef<Group>(null!);
-  const gltf = useLoader(GLTFLoader, '/model3d/space_station_3.glb');
+  const gltf = useLoader(GLTFLoader, '/model3d/moon.glb');
 
   // 드래그 상태 및 회전 속도 관리
   const [isDragging, setIsDragging] = useState(false);
@@ -69,20 +69,21 @@ function MyGLBModel(): JSX.Element {
       <ambientLight intensity={0.4} color="#ffffff" />
 
       {/*태양광 */}
-      <directionalLight position={[5, 10, 5]} intensity={1} color="#ffffff" />
+      <directionalLight position={[5, 10, 5]} intensity={3} color="#ffffff" />
 
       {/* 포인트 라이트*/}
-      <pointLight position={[-5, 5, 5]} intensity={5} color="#ffcc00" distance={15} />
+      <pointLight position={[-5, 5, 5]} intensity={5} color="#ffcc00" distance={20} />
 
       {/* 스포트 라이트 */}
       <spotLight position={[5, 10, 5]} angle={0.3} penumbra={0.5} intensity={2000} color="#8258FA" />
       <spotLight position={[2, 7, 5]} angle={0.3} penumbra={0.5} intensity={2000} color="#2E9AFE" />
       <spotLight position={[8, 3, 2]} angle={0.3} penumbra={0.5} intensity={1000} color="#A9A9F5" />
+      <spotLight position={[20, 10, 15]} angle={0.3} penumbra={0.5} intensity={2000} color="#fffff" />
 
       <primitive
         object={gltf.scene}
         ref={model}
-        scale={[1, 1, 1]}
+        scale={[5, 5, 5]}
         position={[0, 0, 0]} // 초기 위치
       />
     </>
