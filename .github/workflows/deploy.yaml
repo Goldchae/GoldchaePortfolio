@@ -46,4 +46,4 @@ jobs:
             fi
             docker stop myPortfolio || true
             docker rm myPortfolio || true
-            docker run -d -p 80:80 --name myPortfolio ${{ env.DOCKER_IMAGE }}:latest
+            docker run -d -p 3024:80 --name myPortfolio ${{ env.DOCKER_IMAGE }}:latest
