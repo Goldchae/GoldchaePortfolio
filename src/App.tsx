@@ -7,9 +7,10 @@ import GlobalStyle from '@/components/common/GlobalStyle';
 const App: React.FC = () => {
   return (
     <>
-<GlobalStyle/>
+      <GlobalStyle/>
       <Background3D />
       <MainPage/>
+
 
     </>
   );

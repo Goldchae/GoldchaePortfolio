@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import mainBackground from '../../../assets/mainback.svg';
+import mainBackground from '../../assets/mainback.svg';
 
 // 배경 컨테이너 스타일
 export const BackgroundContainer = styled.div`

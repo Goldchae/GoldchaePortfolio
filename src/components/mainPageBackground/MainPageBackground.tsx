@@ -10,7 +10,7 @@ const MainPageBackground: React.FC = () => {
         <StarFont
           value="JUNG EUN CHAE"
           fontFamily="StarBold"
-
+          fontSize =
           color="#ffffff"
           style={css`
             font-weight: bold;
