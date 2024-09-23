@@ -63,7 +63,7 @@ const Introduce: React.FC = () => {
       <YearContainer>
         <StarFont
           value="2022-2026"
-          fontFamily="SpaceRegularSpaceRegular"
+          fontFamily="SpaceRegular"
           fontSize="0.8vw"/>
       </YearContainer>
     </>

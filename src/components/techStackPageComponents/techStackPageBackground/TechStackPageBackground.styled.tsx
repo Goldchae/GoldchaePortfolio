@@ -16,7 +16,7 @@ export const TechBackgroundContainer = styled.div`
 `;
 
 export const TitleBoxContainer = styled.div`
-    top : 7%;
+    top : 8%;
     left: -1%;
     position: absolute;
     width: 45vw;
@@ -32,6 +32,13 @@ export const TitleBoxContainer = styled.div`
 
 export const TitleTextContainer = styled.div`
     position: absolute;
-    top: 20%;
-    left: 8%;
+    top: 28%;
+    left: 15%;
 `
+
+export const RotatedTitleContainer = styled.div`
+    transform: rotate(-90deg);  /* 컴포넌트를 90도 회전 */
+    position: absolute;
+    top: 45.5%;
+    left: -8%;
+`;

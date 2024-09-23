@@ -34,5 +34,5 @@ export const LocationContainer = styled.div`
 `
 
 export const YearContainer = styled.div`
-    top : 8%;
+    top : 80%;
 `

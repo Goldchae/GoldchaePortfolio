@@ -1,16 +1,19 @@
 import React from 'react';
 import Background3D from './components/common/3dBackground/Background3d';
-import MainPage from '@/pages/mainPage/MainPage';
+//import MainPage from '@/pages/mainPage/MainPage';
 import GlobalStyle from '@/components/common/GlobalStyle';
-
+import TechStackPage from '@/pages/techStackPage/TechStackPage';
+import { PageContainer } from './App.styled'
 
 const App: React.FC = () => {
   return (
     <>
       <GlobalStyle/>
       <Background3D />
-      <MainPage/>
+      <PageContainer>
 
+        <TechStackPage/>
+      </PageContainer>
 
     </>
   );

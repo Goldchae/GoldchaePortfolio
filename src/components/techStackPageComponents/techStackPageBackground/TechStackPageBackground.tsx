@@ -1,5 +1,5 @@
 import React from 'react';
-import { TechBackgroundContainer, TitleTextContainer,TitleBoxContainer } from '@/components/techStackPageComponents/techStackPageBackground/TechStackPageBackground.styled';
+import { TechBackgroundContainer, TitleTextContainer,TitleBoxContainer,RotatedTitleContainer } from '@/components/techStackPageComponents/techStackPageBackground/TechStackPageBackground.styled';
 import { css } from '@emotion/react';
 import StarFont from '@/components/common/font/StarFont';
 
@@ -10,16 +10,25 @@ const TechStackPageBackground: React.FC = () => {
       <TitleTextContainer>
         <StarFont
           value="STUDYING : TECH STACK"
-          fontFamily="StarBold"
-
+          fontFamily="StarLight"
+          fontSize = "2.6vw"
           color="#ffffff"
-          style={css`
-            font-weight: bold;
-              font-size: 3vw ;
-          `}
         />
       </TitleTextContainer>
         </TitleBoxContainer>
+
+      <RotatedTitleContainer>
+        <StarFont
+          value="FRONTEND"
+          fontFamily="StarBold"
+          fontSize = "7vw"
+          color="transparent"
+          style={css`
+              -webkit-text-stroke: 1px #ffffff;
+              text-stroke: 1px #ffffff; /
+          `}
+        />
+      </RotatedTitleContainer>
     </TechBackgroundContainer>
   );
 };
