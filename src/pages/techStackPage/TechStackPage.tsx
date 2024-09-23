@@ -4,9 +4,9 @@ import TechStackPageBackground
 
 const TechStackPage = () => {
   return (
-    <>
+
       <TechStackPageBackground />
-    </>
+
   )
 }
 

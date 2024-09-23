@@ -10,7 +10,7 @@ import {
 import { css } from '@emotion/react';
 import StarFont from '@/components/common/font/StarFont';
 import ShineLine from '@/components/common/shineLine/ShineLine';
-import Introduce from '@/components/mainPageBackground/introduce/Introduce';
+import Introduce from '@/components/mainPageComponents/introduce/Introduce';
 
 const MainPageBackground: React.FC = () => {
   return (

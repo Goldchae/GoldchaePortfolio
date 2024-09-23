@@ -1,5 +1,5 @@
 import React from 'react';
-import { TechBackgroundContainer, TitleTextContainer,TitleBoxContainer,RotatedTitleContainer } from '@/components/techStackPageComponents/techStackPageBackground/TechStackPageBackground.styled';
+import { TechBackgroundContainer, TitleTextContainer,TitleBoxContainer, RotatedTitleContainer } from '@/components/techStackPageComponents/techStackPageBackground/TechStackPageBackground.styled';
 import { css } from '@emotion/react';
 import StarFont from '@/components/common/font/StarFont';
 

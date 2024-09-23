@@ -1,4 +1,4 @@
-import MainPageBackground from '@/components/mainPageBackground/MainPageBackground';
+import MainPageBackground from '@/components/mainPageComponents/MainPageBackground';
 import React from 'react';
 
 const MainPage = () => {

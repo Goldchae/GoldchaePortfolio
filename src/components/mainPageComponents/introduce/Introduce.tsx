@@ -7,7 +7,7 @@ import {NameContainer,
   MajorContainer,
   CourseContainer,
   LocationContainer,
-  YearContainer} from '@/components/mainPageBackground/introduce/Introduce.styled'
+  YearContainer} from '@/components/mainPageComponents/introduce/Introduce.styled'
 const Introduce: React.FC = () => {
   return (
     <>

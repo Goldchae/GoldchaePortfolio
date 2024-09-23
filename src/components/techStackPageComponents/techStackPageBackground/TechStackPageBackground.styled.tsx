@@ -3,7 +3,7 @@ import TechStackPageBackground from '../../../assets/stackBackground.svg';
 import titleBox from '../../../assets/title.svg';
 
 export const TechBackgroundContainer = styled.div`
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: auto;
     min-width: 500px;
