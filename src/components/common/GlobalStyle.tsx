@@ -6,10 +6,23 @@ const GlobalStyle = () => (
     styles={css`
       @font-face {
         font-family: "StarBold";
-        src: url('/starskyFont/Hakgyoansim Byeolbichhaneul TTF B.ttf') format("truetype");
+        src: url('/starskyFont/HakgyoansimByeolbichhaneulTTFB.ttf') format("truetype");
         font-weight: normal;
         font-style: normal;
       }
+
+        @font-face {
+            font-family: "StarLight";
+            src: url('/starskyFont/HakgyoansimByeolbichhaneulTTFL.ttf') format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "SpaceRegular";
+            src: url('/spaceFont/HakgyoansimWoojuR.ttf') format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
       
       body {
         margin: 0;
