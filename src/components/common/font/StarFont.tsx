@@ -5,7 +5,7 @@ import { StarFontStyle } from "./StarFont.styled";
 interface TextProps {
   value: string;
   fontFamily?: string;
- fontSize?: number;
+  fontSize?: string | number;
   color?: string;
   style?: SerializedStyles;
 }

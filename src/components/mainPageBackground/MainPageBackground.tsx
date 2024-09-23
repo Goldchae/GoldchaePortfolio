@@ -1,23 +1,64 @@
 import React from 'react';
-import { BackgroundContainer, CenteredTextContainer } from './MainPageBackground_style';
+import {
+  BackgroundContainer,
+  CenteredSecondTextContainer,
+  UnderShineLineContainer,
+  CenteredFirstTextContainer,
+  UnderTextContainer,
+  TopShineLineContainer, IntroduceContainer,
+} from './MainPageBackground_style';
 import { css } from '@emotion/react';
 import StarFont from '@/components/common/font/StarFont';
+import ShineLine from '@/components/common/shineLine/ShineLine';
+import Introduce from '@/components/mainPageBackground/introduce/Introduce';
 
 const MainPageBackground: React.FC = () => {
   return (
     <BackgroundContainer>
-      <CenteredTextContainer>
+      <CenteredFirstTextContainer>
         <StarFont
           value="JUNG EUN CHAE"
           fontFamily="StarBold"
-          fontSize =
-          color="#ffffff"
+          fontSize="clamp(10px, 4vw , 1000px)"
+          color="transparent"
           style={css`
-            font-weight: bold;
-              font-size: clamp(16px, 4vw + 1rem, 1000px);
+              -webkit-text-stroke: 1px #ffffff;
+              text-stroke: 1px #ffffff; // 다른 브라우저 호환성용
+
           `}
         />
-      </CenteredTextContainer>
+      </CenteredFirstTextContainer>
+      <CenteredSecondTextContainer>
+        <StarFont
+          value="PROTFOLIO"
+          fontFamily="StarBold"
+          fontSize="clamp(10px, 4vw , 1000px)"
+          color="transparent"
+          style={css`
+              -webkit-text-stroke: 1px #ffffff;
+              text-stroke: 1px #ffffff; // 다른 브라우저 호환성용
+          `}
+        />
+      </CenteredSecondTextContainer>
+<IntroduceContainer>
+      <Introduce/>
+</IntroduceContainer>
+      <UnderTextContainer>
+        <StarFont
+          value="이 포트폴리오 웹사이트는 프론트엔드/클라우드/인공지능 공부 겸 진행되는 1인 프로젝트입니다!"
+          fontFamily="SpaceRegular"
+          fontSize="clamp(1px, 1.2vw , 1000px)"
+          color="#ffffff"
+          style={css`
+          `}
+        />
+      </UnderTextContainer>
+      <UnderShineLineContainer>
+        <ShineLine width="55vw" height="0.5px" color="#ffffff" glowColor="#ffffff" duration="2s" />
+      </UnderShineLineContainer>
+      <TopShineLineContainer>
+        <ShineLine width="49vw" height="1px" color="#ffffff" glowColor="#ffffff" duration="2s" />
+      </TopShineLineContainer>
     </BackgroundContainer>
   );
 };
