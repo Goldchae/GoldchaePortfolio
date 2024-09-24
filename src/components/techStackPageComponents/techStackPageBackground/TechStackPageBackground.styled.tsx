@@ -1,14 +1,12 @@
 import styled from '@emotion/styled';
-import TechStackPageBackground from '../../../assets/stackBackground.svg';
-import titleBox from '../../../assets/title.svg';
 
 export const TechBackgroundContainer = styled.div`
     position: relative;
     width: 100vw;
     height: auto;
     min-width: 500px;
-    aspect-ratio: 1310 / 860; 
-    background: url(${TechStackPageBackground}) no-repeat center top;
+    aspect-ratio: 1310 / 860;
+    background: url('/assets/stackBackground.svg') no-repeat center top;
     background-size: contain;
     z-index: 0;
     margin: 0;
@@ -22,7 +20,7 @@ export const TitleBoxContainer = styled.div`
     width: 45vw;
     height: auto;
     aspect-ratio: 800 / 120; 
-    background: url(${titleBox}) no-repeat center top;
+    background: url('/assets/title.svg') no-repeat center top;
     background-size: contain;
     z-index: 1;
     margin: 0;
