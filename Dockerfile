@@ -18,6 +18,9 @@ FROM nginx:alpine
 # 빌드된 파일을 Nginx의 html 디렉토리로 복사
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# public 폴더에 있는 정적 파일을 Nginx 디렉토리로 복사
+COPY --from=build /app/public /usr/share/nginx/html
+
 # 포트 80 노출
 EXPOSE 80
 
