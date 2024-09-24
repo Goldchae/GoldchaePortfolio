@@ -5,9 +5,11 @@ import { Group } from 'three';
 
 import MyStarModel from './myStarModel';
 
-function MyGLBModel(): JSX.Element {
+function MyGLTFModel(): JSX.Element {
   const model = useRef<Group>(null!);
-  const gltf = useLoader(GLTFLoader, '/model3d/nasa_moon.glb');
+
+  // GLTF 파일 로드
+  const gltf = useLoader(GLTFLoader, '/model3d/nasa_moon_kit/nasa_moon.gltf'); // .gltf 파일 사용
 
   // 드래그 상태 및 회전 속도 관리
   const [isDragging, setIsDragging] = useState(false);
@@ -23,7 +25,6 @@ function MyGLBModel(): JSX.Element {
       previousPosition.current = { x: event.clientX, y: event.clientY };
 
       rotationVelocity.current = { x: 0, y: 0 };
-
     };
 
     const handlePointerMove = (event: PointerEvent) => {
@@ -70,7 +71,6 @@ function MyGLBModel(): JSX.Element {
 
   return (
     <>
-
       {/* 전역 조명 */}
       {/*<ambientLight intensity={0.1} color="#ffffff" />*/}
 
@@ -85,9 +85,8 @@ function MyGLBModel(): JSX.Element {
 
       {/* 별 모델 */}
       <MyStarModel />
-
     </>
   );
 }
 
-export default MyGLBModel;
+export default MyGLTFModel;

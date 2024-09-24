@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { SerializedStyles } from "@emotion/react";
-import { StarFontStyle, GlobalFontStyle } from "./StarFont.styled";
+import { StarFontStyle } from "./StarFont.styled";
 
 interface TextProps {
   value: string;
   fontFamily?: string;
- //fontSize?: number;
+  fontSize?: string | number;
   color?: string;
   style?: SerializedStyles;
 }
@@ -13,15 +13,13 @@ interface TextProps {
 const StarFont: React.FC<TextProps> = ({
                                          value,
                                          fontFamily = "StarBold",
-
-                                         color = "#000",
+                                         fontSize = 17,
+                                         color = "#ffffff",
                                          style: customCss,
                                        }) => {
   return (
     <>
-      {/* 전역 폰트 스타일 적용 */}
-      <GlobalFontStyle />
-      <span css={[StarFontStyle({ fontFamily, color }), customCss]}>
+      <span css={[StarFontStyle({ fontFamily, fontSize, color }), customCss]}>
         {value}
       </span>
     </>
