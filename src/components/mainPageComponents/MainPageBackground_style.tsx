@@ -28,6 +28,7 @@ export const CenteredSecondTextContainer = styled.div`
     text-align: center;
 `
 
+
 export const UnderTextContainer = styled.div`
     position: absolute;
     bottom : 8%;
