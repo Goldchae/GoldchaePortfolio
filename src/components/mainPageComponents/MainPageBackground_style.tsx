@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import mainBackground from '../../assets/mainback.svg';
 
 export const BackgroundContainer = styled.div`
     position: absolute;
@@ -7,7 +6,7 @@ export const BackgroundContainer = styled.div`
     height: auto;
     min-width: 500px;
     aspect-ratio: 1300 / 740; /* 이미지의 원래 비율 유지 */
-    background: url(${mainBackground}) no-repeat center top;
+    background: url('/assets/mainback.svg') no-repeat center top;
     background-size: contain;
     z-index: 0;
     margin: 0;
@@ -28,6 +27,7 @@ export const CenteredSecondTextContainer = styled.div`
     transform: translate(-50%, -50%);
     text-align: center;
 `
+
 
 export const UnderTextContainer = styled.div`
     position: absolute;
