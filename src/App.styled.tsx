@@ -4,7 +4,7 @@ export const PageContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    height: auto; /* 부모 요소의 높이를 자동으로 설정 */
+    height: auto;
 `;
 
 export const EachPageContainer = styled.div`

@@ -15,13 +15,13 @@ function Background3D() {
 
       <My3dModel />
 
-      {/* 빛나는 효과*/}
+
       <EffectComposer>
         <Bloom
-          intensity={0.4} // 빛의 강도
-          luminanceThreshold={0} // 빛 효과가 적용되는 최소 밝기
-          luminanceSmoothing={0.9} // 빛이 퍼지는 부드러움 조절
-          // radius={0.1} // 빛이 퍼지는 범위 ?? 안 먹음
+          intensity={0.4}
+          luminanceThreshold={0}
+          luminanceSmoothing={0.9}
+          
 
         />
       </EffectComposer>
