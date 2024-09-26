@@ -3,14 +3,14 @@ import styled from '@emotion/styled';
 const coolBlackButton = '/assets/coolBlackButton.svg';
 
 export const CoolButtonContainer = styled.button`
-    width: 180px;
-    height: 75px;
+    width: 13.5vw;
+    height: 6vW;
     background: url(${coolBlackButton}) no-repeat center center;
     background-size: contain;
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 16px;
+    font-size: 1.3vw;
     font-family: 'SpaceRegular', sans-serif;
     padding-right: 20px;
 
