@@ -48,6 +48,22 @@ export const TopShineLineContainer = styled.div`
 `
 export const IntroduceContainer = styled.div`
     position: absolute;
+    width: 15%;
+    height: 25%;
     Top : 30%;
     left: 4%;
+`
+export const ContactContainer = styled.div`
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    Top : 67%;
+    left: 4%;
+`
+export const ButtonSetContainer = styled.div`
+    position: absolute;
+    width: 42%;
+    height: 10%;
+    Top : 6%;
+    right: 6.5%;
 `

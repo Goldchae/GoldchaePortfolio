@@ -5,12 +5,14 @@ import {
   UnderShineLineContainer,
   CenteredFirstTextContainer,
   UnderTextContainer,
-  TopShineLineContainer, IntroduceContainer,
+  TopShineLineContainer, IntroduceContainer, ContactContainer, ButtonSetContainer,
 } from './MainPageBackground_style';
 import { css } from '@emotion/react';
 import StarFont from '@/components/common/font/StarFont';
 import ShineLine from '@/components/common/shineLine/ShineLine';
 import Introduce from '@/components/mainPageComponents/introduce/Introduce';
+import Contact from '@/components/mainPageComponents/contact/Contact';
+import MoveButton from '@/components/mainPageComponents/moveButton/MoveButton';
 
 const MainPageBackground: React.FC = () => {
   return (
@@ -23,8 +25,6 @@ const MainPageBackground: React.FC = () => {
           color="transparent"
           style={css`
               -webkit-text-stroke: 1px #ffffff;
-              text-stroke: 1px #ffffff; // 다른 브라우저 호환성용
-
           `}
         />
       </CenteredFirstTextContainer>
@@ -36,13 +36,18 @@ const MainPageBackground: React.FC = () => {
           color="transparent"
           style={css`
               -webkit-text-stroke: 1px #ffffff;
-              text-stroke: 1px #ffffff; // 다른 브라우저 호환성용
           `}
         />
       </CenteredSecondTextContainer>
+      <ButtonSetContainer>
+      <MoveButton/>
+      </ButtonSetContainer>
 <IntroduceContainer>
       <Introduce/>
 </IntroduceContainer>
+      <ContactContainer>
+        <Contact/>
+      </ContactContainer>
       <UnderTextContainer>
         <StarFont
           value="이 포트폴리오 웹사이트는 프론트엔드/클라우드/인공지능 공부 겸 진행되는 1인 프로젝트입니다!"
