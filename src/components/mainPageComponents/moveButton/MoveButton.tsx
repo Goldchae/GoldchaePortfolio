@@ -4,7 +4,7 @@ import { ButtonContainer } from '@/components/mainPageComponents/moveButton/Move
 
 const MoveButton: React.FC = () => {
   const handleClick = () => {
-    console.log('해당 페이지 이동!');
+    alert('해당 페이지 이동!');
   };
 
   return (
