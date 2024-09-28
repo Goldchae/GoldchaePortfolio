@@ -52,7 +52,7 @@ const MainPageBackground: React.FC = () => {
         <StarFont
           value="이 포트폴리오 웹사이트는 프론트엔드/클라우드/인공지능 공부 겸 진행되는 1인 프로젝트입니다!"
           fontFamily="SpaceRegular"
-          fontSize="clamp(1px, 1.4vw , 1000px)"
+          fontSize="clamp(1px, 1.3vw , 1000px)"
           color="#c0c0c0"
           style={css`
           `}

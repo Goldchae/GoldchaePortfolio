@@ -32,7 +32,7 @@ export const CenteredSecondTextContainer = styled.div`
 export const UnderTextContainer = styled.div`
     position: absolute;
     bottom : 13%;
-    left: 53%;
+    right: 5.5%;
     text-align: center;
 `
 export const UnderShineLineContainer = styled.div`
