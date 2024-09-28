@@ -24,7 +24,7 @@ const MainPageBackground: React.FC = () => {
           fontSize="clamp(10px, 4vw , 1000px)"
           color="transparent"
           style={css`
-              -webkit-text-stroke: 1px #ffffff;
+              -webkit-text-stroke: 2px #ffffff;
           `}
         />
       </CenteredFirstTextContainer>
@@ -35,12 +35,12 @@ const MainPageBackground: React.FC = () => {
           fontSize="clamp(10px, 4vw , 1000px)"
           color="transparent"
           style={css`
-              -webkit-text-stroke: 1px #ffffff;
+              -webkit-text-stroke: 2px #ffffff;
           `}
         />
       </CenteredSecondTextContainer>
-      <ButtonSetContainer>
-      <MoveButton/>
+      <ButtonSetContainer>z-index: 10;
+        <MoveButton/>
       </ButtonSetContainer>
 <IntroduceContainer>
       <Introduce/>
@@ -52,17 +52,17 @@ const MainPageBackground: React.FC = () => {
         <StarFont
           value="이 포트폴리오 웹사이트는 프론트엔드/클라우드/인공지능 공부 겸 진행되는 1인 프로젝트입니다!"
           fontFamily="SpaceRegular"
-          fontSize="clamp(1px, 1.2vw , 1000px)"
-          color="#ffffff"
+          fontSize="clamp(1px, 1.4vw , 1000px)"
+          color="#c0c0c0"
           style={css`
           `}
         />
       </UnderTextContainer>
       <UnderShineLineContainer>
-        <ShineLine width="55vw" height="0.5px" color="#ffffff" glowColor="#ffffff" duration="2s" />
+        <ShineLine width="55vw" height="0.5px" color="#ffffff"  />
       </UnderShineLineContainer>
       <TopShineLineContainer>
-        <ShineLine width="49vw" height="1px" color="#ffffff" glowColor="#ffffff" duration="2s" />
+        <ShineLine width="49vw" height="1px" color="#ffffff"  />
       </TopShineLineContainer>
     </BackgroundContainer>
   );
