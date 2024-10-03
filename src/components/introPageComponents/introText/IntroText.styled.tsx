@@ -10,25 +10,25 @@ export const TitleBoxContainer = styled.div`
 export const TitleTextContainer = styled.div`
     position: absolute;
     top: 35%;
-    left: 42%;
+    left: 41%;
     text-align: center;
 `
 
 export const BoduTextContainer = styled.div`
     position: absolute;
-    top: 45%;
-    left: 25%;
+    top: 46%;
+    left: 28%;
     text-align: center;
 `
 export const Bodu2TextContainer = styled.div`
     position: absolute;
-    top: 49%;
-    left: 10%;
+    top: 50%;
+    left: 15%;
     text-align: center;
 `
 export const Bodu3TextContainer = styled.div`
     position: absolute;
-    top: 53%;
-    left: 18%;
+    top: 54%;
+    left: 23%;
     text-align: center;
 `

@@ -28,7 +28,6 @@ export const CenteredSecondTextContainer = styled.div`
     text-align: center;
 `
 
-
 export const UnderTextContainer = styled.div`
     position: absolute;
     bottom : 13%;
@@ -42,7 +41,6 @@ export const UnderShineLineContainer = styled.div`
     z-index: 10;
 
 `
-
 export const TopShineLineContainer = styled.div`
     position: absolute;
     Top : 3%;
@@ -55,17 +53,9 @@ export const IntroduceContainer = styled.div`
     Top : 34%;
     left: 4.5%;
 `
-export const ContactContainer = styled.div`
+
+export const MyPhotoContainer = styled.div`
     position: absolute;
-    width: 15%;
-    height: 10%;
-    Top : 65%;
+    Top : 9%;
     left: 4.5%;
-`
-export const ButtonSetContainer = styled.div`
-    position: absolute;
-    width: 42%;
-    height: 10%;
-    Top : 3.5%;
-    right: 6.5%;
 `
