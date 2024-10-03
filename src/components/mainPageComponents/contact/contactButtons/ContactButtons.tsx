@@ -8,7 +8,7 @@ export const ButtonContainer = styled.div`
     position: absolute;
     
     display: flex;           
-    gap: 10px;               
+    gap: 1vw;               
     justify-content: center; 
     align-items: center;    
 `;

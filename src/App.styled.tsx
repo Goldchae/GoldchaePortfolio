@@ -14,3 +14,11 @@ export const EachPageContainer = styled.div`
     padding: 0;
     
 `;
+
+export const IntroPageContainer = styled.div`
+    width: 100%;
+    aspect-ratio: 6 / 3.4;
+    margin: 0;
+    padding: 0;
+    
+`;

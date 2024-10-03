@@ -3,7 +3,7 @@ import Background3D from './components/common/3dBackground/Background3d';
 import MainPage from '@/pages/mainPage/MainPage';
 import GlobalStyle from '@/components/common/GlobalStyle';
 import TechStackPage from '@/pages/techStackPage/TechStackPage';
-import { PageContainer,  EachPageContainer } from './App.styled';
+import { PageContainer,  EachPageContainer, IntroPageContainer } from './App.styled';
 import IntroPage from '@/pages/introPage/IntroPage';
 
 const App: React.FC = () => {
@@ -17,9 +17,9 @@ const App: React.FC = () => {
           <MainPage />
         </EachPageContainer>
 
-        <EachPageContainer>
+        <IntroPageContainer>
           <IntroPage/>
-        </EachPageContainer>
+        </IntroPageContainer>
         
         <EachPageContainer>
           <TechStackPage />

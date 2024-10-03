@@ -9,7 +9,7 @@ const IntroText: React.FC = () => {
             <StarFont
               value="HI THERE!"
               fontFamily="StarBold"
-              fontSize = "3.5vw"
+              fontSize = "3.9vw"
               color="#ffffff"
             />
           </TitleTextContainer>
