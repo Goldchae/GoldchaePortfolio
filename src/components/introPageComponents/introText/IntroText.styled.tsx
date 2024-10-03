@@ -10,7 +10,7 @@ export const TitleBoxContainer = styled.div`
 export const TitleTextContainer = styled.div`
     position: absolute;
     top: 35%;
-    left: 41%;
+    left: 40%;
     text-align: center;
 `
 
